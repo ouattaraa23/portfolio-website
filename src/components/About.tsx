@@ -25,7 +25,7 @@ const About: React.FC = () => {
               proficient in Java and am working on learning the MERN Stack (React.js
               & React-Native), along with C, and SQL. I hope to learn more in the
               future and gain more knowledge on my journey as a Software Engineer! 
-              Thank you for visiting my page. <br /><br />Contact Me at: ouattara.a2025@gmail.com
+              Thank you for visiting my page. <br />Contact Me at: ouattara.a2025@gmail.com
             </p>
           </div>
         </div>
