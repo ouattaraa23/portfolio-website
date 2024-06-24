@@ -3,15 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 239, 217, 255;
+  --background-start-rgb: 13, 0, 19;
+  --background-end-rgb: 0, 0, 0;
 }
 
+/* I'll add a dark mode if I really feel like it*/
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
+    --foreground-rgb: 239, 217, 255;
+    --background-start-rgb: 13, 0, 19;
     --background-end-rgb: 0, 0, 0;
   }
 }
@@ -24,6 +25,22 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.navLinks a::after {
+  content: '';
+  height: 0.75rem;
+  background: #cd86ff;
+  position: absolute;
+  left: 0;
+  bottom: -0.75rem;
+  transition: width 0.5s;
+}
+
+.navLinks a:hover::after {
+  bottom: -0.25rem;
+  height: 8%;
+  width: 100%;
 }
 
 @layer utilities {
