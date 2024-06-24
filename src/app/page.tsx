@@ -1,12 +1,14 @@
+import About from "@/components/About";
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
+import Intro from "@/components/Intro";
 import React from "react";
 
 const Home: React.FC = () => {
   return (
     <>
       <Header />
-      <Hero />
+      <Intro />
+      <About />
     </>
   );
 }

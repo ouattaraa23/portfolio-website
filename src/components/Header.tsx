@@ -1,11 +1,18 @@
+'use client'
 import Image from 'next/image';
-import React from 'react';
+import React, { useState } from 'react';
 
 const Header: React.FC = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <nav className="sticky top-0 w-full bg-purple-950 z-1000 flex justify-between items-center px-2 py-1">
+    <nav className="sticky top-0 w-full bg-secondary bg-opacity-100 z-1000 flex justify-between items-center px-8 py-1">
       <div className="flex items-center">
-        <div className="flex items-center">
+        <div className="flex items-center md:mr-8">
           <Image 
             src="/AOLogo.png" 
             alt="logo" 
@@ -13,20 +20,46 @@ const Header: React.FC = () => {
             height={70} 
           />
         </div>
-        <ul className="list-none flex gap-5 ml-5 navLinks">
-          <li className="inline text-3xl p-4">
+        <button
+          className="block md:hidden text-purple-200 focus:outline-none ml-4"
+          onClick={toggleMenu}
+        >
+          {isOpen ? (
+            <svg
+              className="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          ) : (
+            <svg
+              className="w-8 h-8"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          )}
+        </button>
+        <ul className={`list-none flex-col md:flex-row md:flex gap-5 navLinks bg-secondary transition-all duration-300 ease-in-out ${isOpen ? 'flex' : 'hidden'} md:flex absolute md:relative top-16 md:top-0 left-0 md:left-auto w-full md:w-auto`}>
+          <li className="text-center md:text-left p-4 md:p-0 mr-6">
             <a href="#about" className="text-2xl text-purple-200 font-bold relative hover:text-purple-400 transition-colors">
               About
               <span className="block w-0 h-1 bg-purple-500 absolute left-0 bottom-0 transition-all duration-500"></span>
             </a>
           </li>
-          <li className="inline text-3xl p-4">
+          <li className="text-center md:text-left p-4 mr-6 md:p-0">
             <a href="#projects" className="text-2xl text-purple-200 font-bold relative hover:text-purple-400 transition-colors">
               Projects
               <span className="block w-0 h-1 bg-purple-500 absolute left-0 bottom-0 transition-all duration-500"></span>
             </a>
           </li>
-          <li className="inline text-3xl p-4">
+          <li className="text-center md:text-left p-4 mr-6 md:p-0">
             <a href="#interests" className="text-2xl text-purple-200 font-bold relative hover:text-purple-400 transition-colors">
               Interests
               <span className="block w-0 h-1 bg-purple-500 absolute left-0 bottom-0 transition-all duration-500"></span>
