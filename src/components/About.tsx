@@ -11,14 +11,13 @@ const About: React.FC = () => {
               className="rounded-lg"
               src="/casual.JPG"
               alt="Another of my photo should be here"
-              width={500}
-              height={500}
-              layout="responsive"
+              width={600}
+              height={600}
             />
           </div>
           <div className="w-full md:w-2/3 mt-8 md:mt-0">
             <h2 className="text-6xl font-bold mb-4 bg-accent py-1 px-2">About Me</h2>
-            <p className="text-lg leading-relaxed">
+            <p className="text-xl leading-relaxed">
               Hello there! My name is Amara Ouattara and I am currently a Computer
               Science and Economics Student at Northeastern University in Boston,
               MA. I am an aspiring Software Engineer and I hope to gain experience

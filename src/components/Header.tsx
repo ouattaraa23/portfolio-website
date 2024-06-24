@@ -10,7 +10,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <nav className="sticky top-0 w-full bg-secondary bg-opacity-100 z-1000 flex justify-between items-center px-8 py-1">
+    <nav className="sticky top-0 w-full bg-secondary bg-opacity-100 z-50 flex justify-between items-center px-8 py-1">
       <div className="flex items-center">
         <div className="flex items-center md:mr-8">
           <Image 
