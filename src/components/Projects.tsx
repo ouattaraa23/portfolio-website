@@ -14,7 +14,7 @@ const projectData: { [key: string]: Project} = {
         title: "Proxi - Mobile Application",
         tech: "MongoDB, Express.js, React-Native, Expo, Node.js",
         description: "A mobile application developed using the MERN stack and Expo.",
-        image: "/proxi_logo.png",
+        image: "/proxi-login.png",
         github: ""
     },
     footballProject: {
@@ -28,22 +28,22 @@ const projectData: { [key: string]: Project} = {
         title: "Personal Website",
         tech: "HTML, CSS, JavaScript, React.js",
         description: "A personal portfolio website showcasing my projects and skills.",
-        image: "/website_logo.png",
+        image: "/personal-website.png",
         github: ""
     },
     photoEditorProject: {
         title: "Photo Editor - Desktop Application",
         tech: "Electron, React.js, Node.js",
         description: "A desktop application for photo editing with features such as filters, cropping, and adjustments.",
-        image: "/photo_editor_logo.png",
+        image: "/image-processer.png",
         github: ""
     }
 }
 
 const Projects: React.FC = () => {
     return (
-        <section id="projects" className="py-20">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <section id="projects" className="pt-40 mb-40">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 p-4 place-items-center">
                 {Object.keys(projectData).map((key) => (
                     <Card 
                     key={key}

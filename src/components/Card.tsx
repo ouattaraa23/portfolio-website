@@ -1,6 +1,7 @@
 'use client'
 import React, { useState } from "react";
 import Modal from "./Modal";
+import Image from "next/image";
 
 type CardProps = {
     imageUrl: string;
@@ -23,10 +24,16 @@ const Card: React.FC<CardProps> = ({ imageUrl, title, tech ,modalContent, github
 
     return (
         <>
-          <div className="relative w-1/4 h-64 mx-4 my-2 rounded-lg overflow-hidden shadow-lg cursor-pointer" onClick={handleCardClick}>
-            <img src={imageUrl} alt={title} className="object-cover w-full h-full" />
-            <div className="absolute top-0 left-0 w-full bg-black bg-opacity-50 p-4">
-              <h2 className="text-white text-xl">{title}</h2>
+          <div className="relative w-1/2 h-64 mx-4 my-2 rounded-lg overflow-hidden shadow-lg cursor-pointer" onClick={handleCardClick}>
+            <Image
+              className="object-cover w-full h-full"
+              src={imageUrl}
+              alt={title}
+              width={800}
+              height={800}
+            />
+            <div className="absolute bottom-0 left-0 w-full bg-primary-light bg-opacity-100 p-4">
+              <h2 className="text-secondary text-xl">{title}</h2>
             </div>
           </div>
           <Modal 

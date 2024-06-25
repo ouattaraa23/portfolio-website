@@ -3,7 +3,7 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="py-20">
+    <section id="about" className="py-20 pt-60">
       <div className="max-w-6xl mx-auto px-5">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 pr-0 sm:pr-3">
