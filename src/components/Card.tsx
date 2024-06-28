@@ -24,7 +24,7 @@ const Card: React.FC<CardProps> = ({ imageUrl, title, tech ,modalContent, github
 
     return (
         <>
-          <div className="relative w-1/2 h-64 mx-4 my-2 rounded-lg overflow-hidden shadow-lg cursor-pointer" onClick={handleCardClick}>
+          <div className="relative w-3/4 h-3/4 mx-4 my-2 rounded-lg overflow-hidden shadow-lg cursor-pointer" onClick={handleCardClick}>
             <Image
               className="object-cover w-full h-full"
               src={imageUrl}

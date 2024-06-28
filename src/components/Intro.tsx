@@ -21,7 +21,7 @@ const Intro: React.FC = () => {
           Resume
         </a>
       </div>
-      <div className="absolute bottom-1/4 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-1/4 sm:bottom-1 left-1/2 transform -translate-x-1/2">
         <div className="flex flex-col items-center">
           <span className="animate-bounce text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">Scroll</span>
           <svg
