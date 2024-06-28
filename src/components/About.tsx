@@ -16,7 +16,7 @@ const About: React.FC = () => {
             />
           </div>
           <div className="w-full md:w-2/3 mt-8 md:mt-0">
-            <h2 className="text-6xl font-bold mb-4 bg-accent py-1 px-2">About Me</h2>
+            <h2 className="text-6xl font-bold mb-4 bg-accent py-2 px-2">About Me</h2>
             <p className="text-xl leading-relaxed">
               Hello there! My name is Amara Ouattara and I am currently a Computer
               Science and Economics Student at Northeastern University in Boston,

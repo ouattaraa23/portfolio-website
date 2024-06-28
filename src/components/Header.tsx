@@ -45,32 +45,32 @@ const Header: React.FC = () => {
           )}
         </button>
       </div>
-      <ul className={`list-none flex-col md:flex-row md:flex gap-5 navLinks bg-secondary transition-all duration-300 ease-in-out ${isOpen ? 'flex' : 'hidden'} md:flex absolute md:relative top-16 md:top-0 left-0 md:left-auto w-full md:w-auto md:items-center`}>
-        <li className="text-center md:text-left p-4 md:p-0">
+      <ul className={`list-none flex-col md:flex-row md:flex gap-5 navLinks bg-secondary ml-10 transition-all duration-300 ease-in-out ${isOpen ? 'flex' : 'hidden'} md:flex absolute md:relative top-16 md:top-0 left-0 md:left-auto w-full md:w-auto md:items-center`}>
+        <li className="text-center md:text-left py-4 mx-4 md:p-0">
           <a href="#about" className="text-2xl text-purple-200 font-bold relative hover:text-purple-400 transition-colors">
             About
             <span className="block w-0 h-1 bg-purple-500 absolute left-0 bottom-0 transition-all duration-500"></span>
           </a>
         </li>
-        <li className="text-center md:text-left p-4 md:p-0">
+        <li className="text-center md:text-left py-4 mx-4 md:p-0">
           <a href="#projects" className="text-2xl text-purple-200 font-bold relative hover:text-purple-400 transition-colors">
             Projects
             <span className="block w-0 h-1 bg-purple-500 absolute left-0 bottom-0 transition-all duration-500"></span>
           </a>
         </li>
-        <li className="text-center md:text-left p-4 md:p-0">
+        <li className="text-center md:text-left py-4 mx-4 md:p-0">
           <a href="#interests" className="text-2xl text-purple-200 font-bold relative hover:text-purple-400 transition-colors">
             Interests
             <span className="block w-0 h-1 bg-purple-500 absolute left-0 bottom-0 transition-all duration-500"></span>
           </a>
         </li>
-        <li className="text-center md:text-left p-4 md:p-0">
+        <li className="md:hidden text-center md:text-left p-4 md:p-0">
           <a href="https://www.linkedin.com/in/amara-ouattara/" className="text-2xl text-purple-200 font-bold relative hover:text-purple-400 transition-colors">
             LinkedIn
             <span className="block w-0 h-1 bg-purple-500 absolute left-0 bottom-0 transition-all duration-500"></span>
           </a>
         </li>
-        <li className="text-center md:text-left p-4 md:p-0">
+        <li className="md:hidden text-center md:text-left p-4 md:p-0">
           <a href="https://github.com/ouattaraa23" className="text-2xl text-purple-200 font-bold relative hover:text-purple-400 transition-colors">
             GitHub
             <span className="block w-0 h-1 bg-purple-500 absolute left-0 bottom-0 transition-all duration-500"></span>
