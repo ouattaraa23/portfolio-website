@@ -43,7 +43,7 @@ const projectData: { [key: string]: Project} = {
 const Projects: React.FC = () => {
     return (
         <section id="projects" className="pt-40 mb-40">
-            <h2 className="text-6xl font-bold mb-4 bg-accent mx-6 py-1 px-2 text-center">Projects</h2>
+            <h2 className="text-6xl font-bold mb-4 bg-accent mx-6 py-3 px-2 text-center">Projects</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 p-4 place-items-center">
                 {Object.keys(projectData).map((key) => (
                     <Card 

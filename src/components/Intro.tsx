@@ -2,7 +2,7 @@ import React from 'react';
 
 const Intro: React.FC = () => {
   return (
-    <div className="relative min-h-screen flex justify-center items-start pt-20 mt-20">
+    <div className="relative min-h-screen flex justify-center items-start mt-40">
       <div className="text-center px-4">
         <div className="text-left py-2">
           <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl mt-2">Welcome! My name is</p>
@@ -20,20 +20,6 @@ const Intro: React.FC = () => {
         >
           Resume
         </a>
-      </div>
-      <div className="absolute bottom-1/4 sm:bottom-1 left-1/2 transform -translate-x-1/2">
-        <div className="flex flex-col items-center">
-          <span className="animate-bounce text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl">Scroll</span>
-          <svg
-            className="animate-bounce w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 lg:w-12 lg:h-12 xl:w-14 xl:h-14 mt-2"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-          </svg>
-        </div>
       </div>
     </div>
   );

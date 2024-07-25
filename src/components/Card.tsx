@@ -11,7 +11,7 @@ type CardProps = {
     github: string;
 }
 
-const Card: React.FC<CardProps> = ({ imageUrl, title, tech ,modalContent, github }) => {
+const Card: React.FC<CardProps> = ({ imageUrl, title, tech, modalContent, github }) => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const handleCardClick = () => {
@@ -24,7 +24,10 @@ const Card: React.FC<CardProps> = ({ imageUrl, title, tech ,modalContent, github
 
     return (
         <>
-          <div className="relative w-3/4 h-3/4 mx-4 my-2 rounded-lg overflow-hidden shadow-lg cursor-pointer" onClick={handleCardClick}>
+          <div
+            className="relative w-3/4 h-3/4 mx-4 my-2 rounded-lg overflow-hidden shadow-lg cursor-pointer border-2 border-violet-400 transform transition-transform duration-300 hover:scale-105"
+            onClick={handleCardClick}
+          >
             <Image
               className="object-cover w-full h-full"
               src={imageUrl}
@@ -36,7 +39,7 @@ const Card: React.FC<CardProps> = ({ imageUrl, title, tech ,modalContent, github
               <h2 className="text-secondary text-xl">{title}</h2>
             </div>
           </div>
-          <Modal 
+          <Modal
             isOpen={isModalOpen}
             onRequestClose={handleCloseModal}
             title={title}
