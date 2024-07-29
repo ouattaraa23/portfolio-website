@@ -8,6 +8,26 @@
   --background-end-rgb: 0, 0, 0;
 }
 
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #cd86ff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0f0014;
+  border-radius: 10px;
+  border: 3px solid #0f0014;
+}
+
+/* Custom scrollbar for Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #cd86ff #0f0014;
+}
+
 /* I'll add a dark mode if I really feel like it*/
 /* @media (prefers-color-scheme: dark) {
   :root {

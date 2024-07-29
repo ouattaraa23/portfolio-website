@@ -19,7 +19,7 @@ const Interests: React.FC = () => {
           <div className="w-full md:w-1/3 pr-0 sm:pr-3">
             <Image
               className="rounded-lg"
-              src="/BasketballImage.JPG"
+              src="/images/BasketballImage.JPG"
               alt="Another of my photo should be here"
               width={600}
               height={600}

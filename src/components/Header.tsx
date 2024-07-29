@@ -13,7 +13,7 @@ const Header: React.FC = () => {
     <nav className="sticky top-0 w-full bg-secondary bg-opacity-100 z-50 flex justify-between items-center px-4 py-2">
       <div className="flex items-center justify-between w-full md:w-auto">
         <Image 
-          src="/AOLogo.png" 
+          src="/images/AOLogo.png" 
           alt="logo" 
           width={70} 
           height={70} 

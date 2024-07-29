@@ -9,7 +9,7 @@ const About: React.FC = () => {
           <div className="w-full md:w-1/3 pr-0 sm:pr-3">
             <Image
               className="rounded-lg"
-              src="/casual.JPG"
+              src="/images/casual.JPG"
               alt="Another of my photo should be here"
               width={600}
               height={600}
